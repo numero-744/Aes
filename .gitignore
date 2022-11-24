@@ -1,0 +1,37 @@
+simWorkspace/
+tmp/
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/project
+project/plugins/project/
+
+# IDEA specific
+.scala_dependencies
+.worksheet
+.bloop
+.idea
+
+# Mill-specific
+out
+
+# VSCodium
+.bsp
+.metals
+project/metals.sbt
+.vscode/*
+!.vscode/SpinalHDL.code-snippets
+
+# Eclipse
+bin/
+.classpath
+.project
+.settings
+.cache-main
