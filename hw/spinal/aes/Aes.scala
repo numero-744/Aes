@@ -73,3 +73,7 @@ case class Aes() extends Component {
     DONE.whenIsActive { enableOutput }
   }
 }
+
+object AesGen extends App {
+  Config.spinal.generateSystemVerilog(Aes())
+}
