@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.113 (w)1999-2022 BSI
+[*] Wed Nov 30 17:04:06 2022
+[*]
+[dumpfile] "/home/come/Brouillons/SpinalAES/simWorkspace/aes/aes should cipher 'Bonjour, monde!'.fst"
+[dumpfile_mtime] "Wed Nov 30 16:30:25 2022"
+[dumpfile_size] 16204
+[savefile] "/home/come/Brouillons/SpinalAES/tb/gtkw/Aes.gtkw"
+[timestart] 0
+[size] 1908 276
+[pos] -1 -1
+*-5.397696 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 40
+[signals_width] 412
+[sst_expanded] 0
+[sst_vpaned_height] 58
+@28
+TOP.resetn
+@22
+TOP.io_cipher[127:0]
+@23
+TOP.io_key[127:0]
+@28
+TOP.io_ready
+TOP.io_start
+@22
+TOP.io_text[127:0]
+@28
+TOP.clk
+TOP.resetn
+@22
+TOP.io_cipher[127:0]
+@23
+TOP.io_key[127:0]
+@28
+TOP.io_ready
+TOP.io_start
+@22
+TOP.io_text[127:0]
+[pattern_trace] 1
+[pattern_trace] 0

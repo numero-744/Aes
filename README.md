@@ -6,8 +6,9 @@
 - Added `.vscode/SpinalHDL.code-snippets` for VSCode snippets
 - Updated project name in folder name and `build.*`
 - Using `SpinalHDL@dev`
-- I had several generators for several entities at first, so I had put them all in `Generators.scala`.
 - Updated `.gitignore`
+- Added `tb/` folder with same structure as `hw/`, for tests / simulation files
+- Updated `build.*` with the new `tb/` folder and to add HTML report generation (in `simWorkspace/test-reports`)
 
 Use of snippets are put in comments. It is "full" use, so actually there was less keystrokes because of auto completion :wink:
 
@@ -15,6 +16,13 @@ Use of snippets are put in comments. It is "full" use, so actually there was les
 - More snippets, shown in `hw/spinal/aes/Aes.scala`, with idioms.
 - Disabling formatting locally shown in `hw/spinal/aes/SBox.scala`.
 - Component-as-function snippet shown in `hw/spinal/aes/SBox.scala`.
+- `App` to simulate is in `tb/spinal/aes/Simulate.scala`.
+- `SpinalTestBench` is in `tb/spinal/aes/Simulate.scala`.
+- `gtkw` configurations are generated for each test, in `tb/gtkw/`, from `tb/gtkw/Aes.gtkw` using my `deriveGtkw` script.
+
+As a result I get:
+
+- `simWorkspace/aes/aes should cipher example from class.fst` from the `SpinalTestBench`
+- `simWorkspace/test-reports/index.html` from `SpinalTestBench`
 
 - [x] `sbt scalafmtCheckAll` passed so **all code is actual auto formatting**.
-- [x] `sbt publishLocal` has correct name: in `build.sbt`, `name := ` is not needed, it gets the value name

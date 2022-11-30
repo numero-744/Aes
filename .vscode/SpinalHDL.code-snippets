@@ -14,7 +14,7 @@
 	"Import spinal.core.sim": {
 		"scope": "scala",
 		"prefix": "importsim",
-		"body": ["import spinal.core._", "import spinal.core.sim._", ""]
+		"body": ["import spinal.core.sim._", ""]
 	},
 
 	"New component": {

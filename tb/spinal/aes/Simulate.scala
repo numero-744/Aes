@@ -1,7 +1,6 @@
 package aes
 
 import spinal.core.sim._
-import spinal.lib._
 
 object Simulate extends App {
   val bench = Config.sim.compile(Aes())
@@ -51,6 +50,8 @@ object Simulate extends App {
       expected: String = null,
       keep: Int = 0
   ) = {
+    import spinal.lib._
+
     import dut.clockDomain
     import dut.io
 
