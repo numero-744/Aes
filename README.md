@@ -25,4 +25,6 @@ As a result I get:
 - `simWorkspace/aes/aes should cipher example from class.fst` from the `SpinalTestBench`
 - `simWorkspace/test-reports/index.html` from `SpinalTestBench`
 
+![2022-11-30-193857_1918x1062_scrot](https://user-images.githubusercontent.com/42908717/204881904-560dbd43-5111-4cd7-98e4-7e2e3ada5921.png)
+
 - [x] `sbt scalafmtCheckAll` passed so **all code is actual auto formatting**.
