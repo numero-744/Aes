@@ -8,7 +8,7 @@
 	"Import spinal.lib": {
 		"scope": "scala",
 		"prefix": "importlib",
-		"body": ["import spinal.lib._", ""]
+		"body": ["import spinal.lib.${1:_}", ""]
 	},
 
 	"Import spinal.core.sim": {

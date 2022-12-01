@@ -1,7 +1,6 @@
 package aes
 
 import spinal.core.sim._
-import spinal.core.BitVector
 
 case class AesEnv(dut: Aes) {
   import dut.{clockDomain => cd}

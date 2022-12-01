@@ -1,7 +1,6 @@
 package aes
 
 import spinal.core._
-import spinal.lib.fsm._
 
 // component KeyExpander <Tab>
 // pin enable, readKey Bool()
