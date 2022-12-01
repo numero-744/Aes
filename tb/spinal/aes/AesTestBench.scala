@@ -43,13 +43,11 @@ case class AesEnv(dut: Aes) {
   }
 }
 
-class AesTestBench extends SpinalTestBench {
-  override def defaultConfig: SpinalSimConfig = Config.sim
-
-  val aes = Dut(Aes()) withEnv AesEnv
-
+class AesTestBench extends Config.TestBench {
   def x(str: String): BigInt = BigInt(str, 16)
   val key = x("2b7e151628aed2a6abf7158809cf4f3c")
+
+  val aes = Dut(Aes()) withEnv AesEnv
 
   aes should "cipher example from class" inSim { env =>
     val c = env.cipher(x("45732d747520636f6e66696ee865203f"), key, keep = 3)

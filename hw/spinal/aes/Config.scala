@@ -13,4 +13,8 @@ object Config {
   )
 
   def sim = SimConfig.withConfig(spinal).withFstWave
+
+  abstract class TestBench extends SpinalTestBench {
+    override def defaultConfig: SpinalSimConfig = sim
+  }
 }
